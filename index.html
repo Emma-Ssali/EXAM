@@ -1,0 +1,96 @@
+<!-- specializes social media branding -->
+<!-- design a profile page, Sheila Pink -->
+<!-- profile layout showing her dedication to fashion -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="./fontawesome/css/all.css">
+</head>
+<body>
+    <div class="container">
+        <div class="profile-header">
+            <div class="profile-img">
+                <img src="Sheila.jpg" width="200">
+            </div>
+            <div class="profile-nav-info">
+                <h2 class="user-name">Sheila Pink</h2>
+                <p class="state">15 Summer St, Hyde Park, MA 02136</p>
+            </div>
+        </div>
+
+        <div class="main-bd">
+            <div class="left-side">
+                <div class="profile-side">
+                    <p class="mobile-no"><i class="bi bi-telephone-fill"></i>+(516) 633-6066</p>
+                    <p class="user-email"><i class="bi bi-envelope-fill"></i>sheilapink@gmail.com</p>
+
+                    <div class="user-bio">
+                        <p class="bio">Sheila Pink is a lady who is passionate about clothing styles that help 
+                            reflect different personalities on several individuals. 
+                        </p>
+                    </div>
+
+                    <div class="profile-btn">
+                        <button class="chatbtn"><i class="bi bi-chat-fill"></i>Chat</button>
+                    </div>
+
+                    <div class="user-rating">
+                        <h3 class="rating">4</h3>
+                        <div class="rate">
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <span>243 Reviews</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div class="nav">
+                    <ul>
+                        <li onclick="tabs(0)" class="user-post"></li>
+                        <li onclick="tabs(1)" class="user-review"></li>
+                        <li onclick="tabs(2)" class="user-setting"></li>    
+                    </ul>
+                </div>
+
+                <div class="profile-body">
+                    <div class="profile-posts tab">
+                        <h1>Your Posts</h1>
+                        <p></p>
+                    </div>
+                    <div class="profile-review tab">
+                        <h1>User reviews</h1>
+                        <p></p>
+                    </div>
+                    <div class="profile-settings tab">
+                        <h1>Account Settings</h1>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./jquery/jquery.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
